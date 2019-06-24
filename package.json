@@ -1,0 +1,46 @@
+{
+  "name": "population-management-api",
+  "version": "1.0.0",
+  "description": "The API functionalities of Population Management API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm src/app.js",
+    "test": "NODE_ENV=test nyc mocha src/tests --require @babel/register --exit",
+    "dev": "nodemon"
+  },
+  "author": "daramolaajibigad@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "nodemon": "^1.18.4",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.1.0",
+    "esm": "^3.2.25",
+    "express": "^4.16.4",
+    "express-useragent": "^1.0.12",
+    "express-validator": "^5.3.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.1"
+  }
+}
